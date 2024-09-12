@@ -1,0 +1,15 @@
+@media(max-width: 766px){
+    .villageDataTable {
+        display: none;
+    } 
+
+ }
+ @media(min-width: 766px){
+    .villageDataTableMo{
+display: none;
+    }
+ }
+ .VillagePeopledata{
+    overflow-x: auto;
+ }
+ 

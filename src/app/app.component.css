@@ -1,0 +1,29 @@
+/* Custom styles for dropdown submenu */
+.dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px; /* Adjust this value as needed */
+    display: none;
+  }
+  
+  .dropdown-submenu:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Optional: Ensure that dropdown items don't overlap */
+  .dropdown-menu {
+    z-index: 1000; /* Ensure dropdown menus appear on top of other elements */
+  }
+  .janshaktiLogo{
+    width: 100px;
+    height: 100px;
+  }
+  .navbar{
+    position: sticky;
+    display: flex;
+    
+  }
