@@ -135,7 +135,7 @@
                     <th scope="row">1</th>
                     <td>सरपंच</td>
                     <td>
-                        <button class="btn btn-primary btn-sm">Edit</button>
+                        <button class="btn btn-primary btn-sm" (click)="AddVillageData()">Edit</button>
                         <button class="btn btn-danger btn-sm ms-2">Delete</button>
                         <button class="btn btn-info btn-sm ms-2" (click)="toggleViewPhy()">View</button>
                     </td>
@@ -173,4 +173,9 @@
     <div class="row" *ngIf="isShowPhy">
         <app-pathardi-village-data (backToMain)="toggleViewPhy()"></app-pathardi-village-data>
       </div>
+</section>
+<section>
+  <div class="row" *ngIf="isAddData">
+      <app-add-village-data (backToMain)="AddVillageData()"></app-add-village-data>
+    </div>
 </section>
