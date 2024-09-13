@@ -11,6 +11,7 @@ export class VillageDataComponent implements OnInit {
 
   isShowChem = false;
   isShowPhy = false;
+  isAddData = false;
   hideandshow : boolean = true;
 
   constructor() { }
@@ -20,6 +21,10 @@ export class VillageDataComponent implements OnInit {
 
   toggleViewPhy(){
     this.isShowPhy = !this.isShowPhy;
+    this.hideandshow = !this.hideandshow;
+  }
+  AddVillageData(){
+    this.isAddData = !this.isAddData;
     this.hideandshow = !this.hideandshow;
   }
 

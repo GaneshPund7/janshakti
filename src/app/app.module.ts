@@ -9,7 +9,8 @@ import { VillageDataComponent } from './layout/shevgaon-village-data/village-dat
 import { PathardiVillageDataComponent } from './layout/pathardi-village-data/pathardi-village-data.component'
 import { GalleryComponent } from './gallery/gallery.component'
 import { ReactiveFormsModule } from '@angular/forms'
-import { HttpClient, HttpClientModule } from '@angular/common/http'
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { AddVillageDataComponent } from './layout/add-village-data/add-village-data.component'
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http'
     VillageDataComponent,
     PathardiVillageDataComponent,
     GalleryComponent,
+    AddVillageDataComponent,
     // HttpClient
   ],
   imports: [
