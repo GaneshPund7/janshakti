@@ -1,49 +1,93 @@
 <div class="container bg-body-tertiary">
-
-<div class=" ">
-  <!-- <img src="../assets/janshaktiLogo.jfif" alt="" class="janshaktiLogo"> -->
-  <div class=" d-flex justify-content-center">
-    <h4 class="text-success">Janshakti Vikas Aghadi</h4>
-
+  <div class=" ">
+    <!-- <img src="../assets/janshaktiLogo.jfif" alt="" class="janshaktiLogo"> -->
+    <div class="d-flex justify-content-center">
+      <h4 class="text-success">Janshakti Vikas Aghadi</h4>
+    </div>
   </div>
-  
-</div>
 </div>
 <nav class="navbar navbar-expand-lg bg-info shadow fixed-top">
-  <div class="container-fluid ">
+  <div class="container-fluid">
     <h3 class="navbar-brand text-danger" href="#"><b>Janshakti</b></h3>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active ms-4" routerLink="home" aria-current="page" href="#"><b>Home</b></a>
+          <a
+            class="nav-link active ms-4"
+            routerLink="home"
+            aria-current="page"
+            href="#"
+            ><b>Home</b></a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link active ms-4" routerLink="home" aria-current="page" href="#"><b>About</b></a>
+          <a
+            class="nav-link active ms-4"
+            routerLink="home"
+            aria-current="page"
+            href="#"
+            ><b>About</b></a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link active ms-4" routerLink="gallery" aria-current="page" href="#"><b>Gallery</b></a>
+          <a
+            class="nav-link active ms-4"
+            routerLink="gallery"
+            aria-current="page"
+            href="#"
+            ><b>Gallery</b></a
+          >
         </li>
-      
+
         <li class="nav-item">
           <div class="dropdown">
-            <button class="btn dropdown-toggle border-0" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            <button
+              class="btn dropdown-toggle border-0"
+              type="button"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
               Taluka
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <li class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="#" id="dropdownSubMenu1" data-bs-toggle="dropdown" aria-expanded="false">Shevgaon</a>
+                <a
+                  class="dropdown-item dropdown-toggle"
+                  href="#"
+                  id="dropdownSubMenu1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Shevgaon</a
+                >
                 <ul class="dropdown-menu" aria-labelledby="dropdownSubMenu1">
-                  <li><a class="dropdown-item" routerLink="ShevgaonVillageData" href="#">Adhodi</a></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      routerLink="ShevgaonVillageData"
+                      href="#"
+                      >Adhodi</a
+                    >
+                  </li>
                   <li><a class="dropdown-item" href="#">Akhatwade</a></li>
                   <li><a class="dropdown-item" href="#">Akhegaon</a></li>
                   <li><a class="dropdown-item" href="#">Titarfa</a></li>
                   <li><a class="dropdown-item" href="#">Amrapur</a></li>
                   <li><a class="dropdown-item" href="#">Antarwali Bk</a></li>
-                  <li><a class="dropdown-item" href="#">Antarwali Khurd she</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Antarwali Khurd she</a>
+                  </li>
                   <li><a class="dropdown-item" href="#">Avhane Bk</a></li>
                   <li><a class="dropdown-item" href="#">Avhane Kd</a></li>
                   <li><a class="dropdown-item" href="#">Aapegaon</a></li>
@@ -73,7 +117,14 @@
                 </ul>
               </li>
               <li class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="#" id="dropdownSubMenu2" data-bs-toggle="dropdown" aria-expanded="false">Pathardi</a>
+                <a
+                  class="dropdown-item dropdown-toggle"
+                  href="#"
+                  id="dropdownSubMenu2"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Pathardi</a
+                >
                 <ul class="dropdown-menu" aria-labelledby="dropdownSubMenu2">
                   <li><a class="dropdown-item" href="#">Miri</a></li>
                   <li><a class="dropdown-item" href="#">Tisgaon</a></li>
@@ -81,15 +132,126 @@
               </li>
             </ul>
           </div>
-          
         </li>
       </ul>
       <form class="d-flex" role="search">
-        <input class="form-control me-2 shadow" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success shadow" type="submit">Search</button>
-        <button class="btn btn-danger ms-3 shadow" type="submit">Login</button>
+        <input
+          class="form-control me-2 shadow"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success shadow" type="submit">
+          Search
+        </button>
+        <!-- <button class="btn btn-danger ms-3 shadow" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button> -->
       </form>
+      <button
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        (click)="toggleSidebarClose()"
+        class="btn btn-danger ms-2 me-3"
+      >
+        Login
+      </button>
     </div>
   </div>
 </nav>
+
+<!-- login box -->
+<div
+  class="modal"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content bg-info">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form action="" [formGroup]="myForm">
+          <div class="item ms-5">
+            <h4 class="">User Name:</h4>
+            <input
+              type="text"
+              formControlName="userName"
+              class="form-control form-control-sm w-75 rounded-pill"
+              placeholder="Enter User Name"
+            />
+            <div
+              *ngIf="fc['userName'].touched && fc['userName'].invalid"
+              class="text-danger"
+            >
+              <div *ngIf="fc['userName']?.errors?.['required']">
+                <small>Please enter User Name</small>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="item ms-5">
+            <h4 class=" ">E-mail:</h4>
+            <input
+              type="email"
+              formControlName="email"
+              class="form-control form-control-sm w-75 rounded-pill"
+              placeholder="Enter Email"
+            />
+            <div
+              *ngIf="fc['email'].touched && fc['email'].invalid"
+              class="text-danger"
+            >
+              <div *ngIf="fc['email']?.errors?.['required']">
+                <small>Please enter valid E-mail</small>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="item ms-5">
+            <h4 class="text">Password:</h4>
+            <input
+              type="password"
+              id="password"
+              class="form-control form-control-sm w-75 rounded-pill"
+              [type]="showPassword ? 'text' : 'password'"
+              formControlName="password"
+              placeholder="Enter Password"
+            />
+            <div
+              *ngIf="fc['password'].touched && fc['password'].invalid"
+              class="text-danger">
+              <div *ngIf="fc['password']?.errors?.['required']">
+                <small>Please enter strong password</small>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer mt-4">
+        <button
+          type="button"
+          class="btn btn-secondary btn-sm"
+          data-bs-dismiss="modal"
+        >
+          Close
+        </button>
+        <button
+          type="submit"
+          (click)="onSubmit()"
+          class="btn btn-primary btn-sm"
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 <router-outlet></router-outlet>
