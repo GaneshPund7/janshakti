@@ -53,13 +53,7 @@
         <li class="nav-item">
           <div class="dropdown">
             <button
-              class="btn dropdown-toggle border-0"
-              type="button"
-              id="dropdownMenuButton"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Taluka
+              class="btn dropdown-toggle border-0" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"> Taluka
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <li class="dropdown-submenu">
@@ -71,16 +65,9 @@
                   aria-expanded="false"
                   >Shevgaon</a
                 >
-                <ul class="dropdown-menu" aria-labelledby="dropdownSubMenu1">
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      routerLink="ShevgaonVillageData"
-                      href="#"
-                      >Adhodi</a
-                    >
-                  </li>
-                  <li><a class="dropdown-item" href="#">Akhatwade</a></li>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" value="adhodi" [routerLink]="['/ShevgaonVillageData']">Adhodi</a></li>
+                  <li><a class="dropdown-item" value="akhatwade" href="#"> Akhatwade</a></li>
                   <li><a class="dropdown-item" href="#">Akhegaon</a></li>
                   <li><a class="dropdown-item" href="#">Titarfa</a></li>
                   <li><a class="dropdown-item" href="#">Amrapur</a></li>
@@ -88,7 +75,7 @@
                   <li>
                     <a class="dropdown-item" href="#">Antarwali Khurd she</a>
                   </li>
-                  <li><a class="dropdown-item" href="#">Avhane Bk</a></li>
+                  <li><a class="dropdown-item"  href="#">Avhane Bk</a></li>
                   <li><a class="dropdown-item" href="#">Avhane Kd</a></li>
                   <li><a class="dropdown-item" href="#">Aapegaon</a></li>
                   <li><a class="dropdown-item" href="#">BhaviNimgaon</a></li>
@@ -133,6 +120,12 @@
             </ul>
           </div>
         </li>
+        <li class="nav-item">
+          <select class="rounded-pill w-100 h-75 mt-1 text-dark bg-info border-0" [(ngModel)]="selectedOption" (change)="onOptionChange()">
+            <option value="adhodi">Adhodi</option>
+            <option value="akhatwade">Akhatwade</option>
+          </select>
+        </li>
       </ul>
       <form class="d-flex" role="search">
         <input
@@ -157,6 +150,16 @@
     </div>
   </div>
 </nav>
+<!-- <select [(ngModel)]="selectedOption">
+  <option value="adhodi">Adhodi</option>
+  <option value="akhatwade">Akhatwade</option>
+</select>
+
+<button (click)="fetchData()">Fetch Data</button>
+<div *ngIf="data">
+  <h2>Data from {{ selectedOption }}</h2>
+  <pre>{{ data | json }}</pre>
+</div> -->
 
 <!-- login box -->
 <div
@@ -253,5 +256,6 @@
       </div>
     </div>
   </div>
+
 </div>
-<router-outlet></router-outlet>
+<router-outlet ></router-outlet>

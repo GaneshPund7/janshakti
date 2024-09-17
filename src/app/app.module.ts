@@ -8,7 +8,7 @@ import { LoginComponent } from './login/login.component'
 import { VillageDataComponent } from './layout/shevgaon-village-data/village-data.component'
 import { PathardiVillageDataComponent } from './layout/pathardi-village-data/pathardi-village-data.component'
 import { GalleryComponent } from './gallery/gallery.component'
-import { ReactiveFormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AddVillageDataComponent } from './layout/add-village-data/add-village-data.component'
 
@@ -27,7 +27,8 @@ import { AddVillageDataComponent } from './layout/add-village-data/add-village-d
      BrowserModule,
      AppRoutingModule, 
      ReactiveFormsModule,
-     HttpClientModule
+     HttpClientModule,
+     FormsModule
     ],
   
   providers: [],
