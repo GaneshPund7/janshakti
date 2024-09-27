@@ -84,6 +84,9 @@ export class AppComponent implements OnInit {
     } else if (this.selectedOption === 'akhatwade') {
       // Handle navigation for other options
       this.router.navigate(['/OtherRouteForAkhatwade']);
+
+    } else if (this.selectedOption === 'Akhegaon') {
+      this.router.navigate(['/AkhegaonComp']);
     } else {
       // Handle other cases
       console.log('Selected option:', this.selectedOption);

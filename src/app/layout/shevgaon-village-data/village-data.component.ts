@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { RashtravadiModel } from 'src/app/modal/RashtravadiModal';
+import { ShowDataModel } from 'src/app/modal/ShowData';
 import { AdhodiService } from 'src/app/Services/Adhodi/adhodi.service';
 
 @Component({
@@ -13,8 +13,9 @@ export class VillageDataComponent implements OnChanges{
    @Output() backToMain : EventEmitter<any> = new EventEmitter();
   //  @Input() selectedOption!: string;
   //  data: any;
-  jobItems: RashtravadiModel[] = []
-  jobItem!: RashtravadiModel
+  jobItems: ShowDataModel[] = []
+  jobItem!: ShowDataModel
+  
   isShowChem = false;
   isShowPhy = false;
   isAddData = false;

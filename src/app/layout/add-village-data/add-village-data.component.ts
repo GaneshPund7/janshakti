@@ -47,7 +47,8 @@ export class AddVillageDataComponent implements OnInit {
     if (this.VillageHeadData.valid) {
       const formData = this.VillageHeadData.value
       this.postFormData(formData);
-      alert('You have Successfully Log In')
+      alert('You have Successfully Added Data')
+      this.toggleView();
     } else {
       alert('Please enter valid data')
     }
