@@ -11,6 +11,8 @@ const routes: Routes = [
   {path:"home", component: HomeComponent },
   { path:"login", component: LoginComponent },
   { path:"ShevgaonVillageData", component: VillageDataComponent },
+  { path:"OtherRouteForAkhatwade", component: VillageDataComponent },
+  { path:"AkhegaonComp", component: VillageDataComponent },
   { path:"PathardiVillageData", component: PathardiVillageDataComponent },
   { path:"gallery", component: GalleryComponent },
   

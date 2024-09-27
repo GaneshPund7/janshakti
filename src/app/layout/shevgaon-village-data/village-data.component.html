@@ -2,37 +2,21 @@
     <div class="col-lg-12">
       <section class="" *ngIf="hideandshow">
 
-        <div class="VillageInfo mt-5">
+        <div class="d-flex justify-content-end mt-4">
+          <button class="btn btn-info btn-sm" (click)="AddVillageData()">Add Data</button>
+        </div>
+
+        <div class="VillageInfo mt-5" *ngFor="let item of jobItems">
             <div class="details d-flex">
                 <h5 class="">गावचे नाव :</h5>
-                <h6 class="ms-2 me-2">रानेगाव</h6>
+                <h6 class="ms-2 me-2">{{item.villageName}}</h6>
                 <h5 class="ms-2">ता.: </h5>
-                <h6 class="ms-2">शेवगाव </h6>
-                <!-- <div class="row">
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col">
-                        <h4>गावचे नाव :</h4>
-                    </div>
-                    <div class="col">
-                        <h4>रानेगाव </h4>
-                    </div>
-
-                    <div class="col">
-                        <h4>ता.</h4>
-                    </div>
-                    <div class="col">
-                        <h4>शेवगाव </h4>
-                    </div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-
-
-                </div> -->
+                <h6 class="ms-2">{{item.taluka}} </h6>
+              
             </div>
             <div class="d-flex">
-                <h5 class=""> गावातील एकूण मतदान :</h5>
-                <h6 class="ms-3">पुरुष ११२३ महिला ९१६ = २०३९</h6>
+                <h5 class=""> गावातील एकूण मतदान : {{item.villageTotalVotting}}</h5>
+                <h6 class="ms-3">पुरुष {{item.males}} महिला {{item.femails}} = {{item.villageTotalVotting}}</h6>
 
             </div>
             <!-- Total Information calculate population of data dable -->
@@ -55,69 +39,20 @@
                 <tbody>
                   <tr>
                     <th scope="row">संख्या</th>
-                    <td>४१८ </td>
-                    <td>-</td>
-                    <td>६४</td>     
-                    <td>९१४ </td>     
-                    <td>-</td>     
-                    <td>१९४ </td>     
-                    <td>११२ </td>     
-                    <td>२५५ </td>     
-                    <td>२८ </td>     
-                    <td>६२ </td>     
+                    <td>{{item.maratha}} </td>
+                    <td>{{item.muslim}}</td>
+                    <td>{{item.dhangar}}</td>     
+                    <td>{{item.vanjari}} </td>     
+                    <td>{{item.mali}}</td>     
+                    <td>{{item.dalit}} </td>     
+                    <td>{{item.vadar}} </td>     
+                    <td>{{item.laman}} </td>     
+                    <td>{{item.kumbhar}} </td>     
+                    <td>{{item.navhi}} </td>     
                   </tr>              
                 </tbody>
               </table>
-              <table class="villageDataTableMo table table-striped table-info">
-                <thead>
-                  <tr>
-                    <th scope="col">जात</th>
-                    <th scope="col">संख्या</th>                
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>मराठा</td>
-                    <td>४१८</td>        
-                  </tr> 
-                  <tr>
-                    <td>मुस्लिम</td>     
-                    <td>- </td> 
-                  </tr>  
-                  <tr>
-                    <td>धनगर </td>     
-                    <td>६४  </td>  
-                  </tr>  
-                  <tr>
-                    <td>वंजारी </td>     
-                    <td>९१४  </td> 
-                  </tr>  
-                  <tr>
-                    <td>माळी  </td>     
-                    <td>-- </td> 
-                  </tr> 
-                  <tr>
-                    <td>दलित</td>     
-                    <td>१९४</td> 
-                  </tr> 
-                  <tr>
-                    <td>वंडर</td>     
-                    <td>११२</td> 
-                  </tr>
-                  <tr>
-                    <td>लमान</td>     
-                    <td>२५५</td> 
-                  </tr>
-                  <tr>
-                    <td>कुंभर </td>     
-                    <td>२८ </td> 
-                  </tr>
-                  <tr>
-                    <td>न्हावी</td>     
-                    <td>६२ </td> 
-                  </tr>     
-                </tbody>
-              </table>
+               
         </div>
 
         <!-- Village People data table -->
@@ -130,44 +65,36 @@
                     <th scope="col-lg-4" >Action</th>                                 
                   </tr>
                 </thead>
-                <tbody>
+                <tbody >
                   <tr>
-                    <th scope="row">1</th>
-                    <td>सरपंच</td>
+                    <!-- <th scope="row"></th> -->
+                    <td>1</td>
+                    <td>बांधकाम कामगार यादी </td>
+                   
                     <td>
                         <button class="btn btn-primary btn-sm" (click)="AddVillageData()">Edit</button>
-                        <button class="btn btn-danger btn-sm ms-2">Delete</button>
+                        <button class="btn btn-danger btn-sm ms-2">hide</button>
                         <button class="btn btn-info btn-sm ms-2" (click)="toggleViewPhy()">View</button>
-                    </td>
-                    
-                    
-                  </tr>
+                    </td>          
+                  </tr> 
                   <tr>
-                    <th scope="row">2</th>
-                    <td>सदस्य</td>
+                    <!-- <th scope="row"></th> -->
+                    <td>1</td>
+                    <td>गावातील शासकीय पदाधिकारी यादी  </td>
+                   
                     <td>
-                        <button class="btn btn-primary btn-sm">Edit</button>
-                        <button class="btn btn-danger btn-sm ms-2">Delete</button>
-                        <button class="btn btn-info btn-sm ms-2">View</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>बांधकाम कामगार यादी </td>
-                    <td>
-                        <button class="btn btn-primary btn-sm">Edit</button>
-                        <button class="btn btn-danger btn-sm ms-2">Delete</button>
-                        <button class="btn btn-info btn-sm ms-2">View</button>
-                    </td>
-                  </tr>
-                 
+                        <button class="btn btn-primary btn-sm" (click)="AddVillageData()">Edit</button>
+                        <button class="btn btn-danger btn-sm ms-2">hide</button>
+                        <button class="btn btn-info btn-sm ms-2" (click)="toggleViewPhy()">View</button>
+                    </td>          
+                  </tr>            
                 </tbody>
               </table> 
+              
         </div>  
       </section>
     </div>
  </div>
-
  <!-- Show information table -->
 <section>
     <div class="row" *ngIf="isShowPhy">

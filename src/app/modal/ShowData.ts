@@ -1,0 +1,17 @@
+export interface ShowDataModel{
+    villageName: String,
+    taluka: String,
+    villageTotalVotting: String,
+    males: String,
+    femails: String,
+    maratha: String,
+    muslim: String,
+    dhangar: String,
+    vanjari: String,
+    mali: String,
+    dalit: String,
+    vadar: String,
+    laman: String,
+    kumbhar: String,
+    navhi: String,
+}
